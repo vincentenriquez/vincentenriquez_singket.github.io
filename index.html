@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top pt-4 pb-4 navigation-bar">
+        <div class="container logo">
+            <a class="navbar-brand fs-2 pt-0 pb-0 me-0 navigation-header" href="#">Vin<span style="color: #9A3B3B;">cent.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation-menu-content" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto navigation-list">
+                    <li class="nav-item nav-item-animation" style="animation-delay: 0.2s;">
+                        <a class="nav-link ms-4 navigation-menu-items" href="#">Home</a>
+                    </li>
+                    <li class="nav-item nav-item-animation" style="animation-delay: 0.4s;">
+                        <a class="nav-link ms-4 navigation-menu-items" href="#about">About</a>
+                    </li>
+                    <li class="nav-item nav-item-animation" style="animation-delay: 0.6s;">
+                        <a class="nav-link ms-4 navigation-menu-items" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item nav-item-animation" style="animation-delay: 0.8s;">
+                        <a class="nav-link ms-4 navigation-menu-items" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vincent.</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body navigation-menu-content">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 navigation-list">
+                <li class="nav-item">
+                    <a class="nav-link active navigation-menu-items" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation-menu-items" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation-menu-items" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation-menu-items" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="scrollUpBtn" class="position-fixed border border-0 pe-auto rounded-circle fs-4" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <section class="home d-flex justify-content-center align-items-center flex-column vh-100" id="home">
+        <div class="container d-flex justify-content-center align-items-center flex-column home-content text-center">
+            <div class="text-2 mt-2 mb-2 display-4 home-content-animation">From Dribbles to Discipline: My Basketball Journey</div>
+            <div class="text-1 mt-2 mb-2 h5 home-content-animation">Explore my story, skills, and lessons from the court. Whether you're a player, I hope to inspire and share insights. Let’s keep the passion alive and keep hooping!</div>
+        </div>
+        <a class="home-btn text-decoration-none mt-3 p-3" href="#about">TELL MORE</a> 
+    </section>
+
+    <section id="about" class="d-flex justify-content-center align-items-center text-center min-vh-100 about">
+        <div class="container about-content">
+            <h2 class="title fw-bolder mb-4 pb-3 text-center position-relative fs-1" data-aos="fade-down">About Me</h2>
+            <div class="timeline">
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>The Gift That Sparked My Love for Basketball</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <img src="photo1.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>The Ball of My Childhood</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <img src="photo2.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>My First Steps in Basketball</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <img src="photo3.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>A Memorable First: Experiencing My Idols Live</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <img src="photo4.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>Early Mornings and 5v5 Dreams: A Journey in Basketball</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <img src="photo5.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>Inspiring Moments: Watching My NBA Idols Live</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <img src="photo6.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <h3>Stepping Out: My First Varsity Tryout</h3>
+                        <div class="image-container" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <img src="photo7.jpg" alt="Young Player" class="img-fluid sunset no-right-click">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="d-flex justify-content-center align-items-center min-vh-100 skills">
+        <div class="container skills-content d-flex justify-content-center align-items-center flex-column">
+            <div class="mb-5 pb-3 skills-content-header d-flex justify-content-center align-items-center flex-column">
+                <h2 class="title fw-bolder text-center fs-1 mb-0 skills-title" data-aos="fade-down">My Skills</h2>
+                <p class="text-center m-0 under position-relative skills-subtitle fw-bolder" data-aos="fade-down">what i know</p>
+            </div>
+            <div class="row w-100 d-flex justify-content-between align-items-center text-light">
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="97">
+                        <h3>Rebounding - <span>0%</span></h3>
+                        <p class="m-0" style="text-align: justify;">I learned this skill from Marc Pingris, who is a famous player in the Philippines. As a player, this skill is important because the more rebounds a player secures, the more chances the team will have to shoot.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="95">
+                        <h3>Defending - <span>0%</span></h3>
+                        <p style="text-align: justify;">I learned this skills from Mark Barroca, who was a team mate of Marc Pingris back then. As a player, I believe in saying, "Offense wins GAMES, Defense wins CHAMPIONSHIPS".</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="90">
+                        <h3>Passing - <span>0%</span></h3>
+                        <p style="text-align: justify;">I learned these skills from my father. As a player, I don't want many points. I want to win so if I have the opportunity to pass, I'll do it instead of shooting from far away.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 d-flex justify-content-between align-items-center text-light">
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="88">
+                        <h3>Shooting - <span>0%</span></h3>
+                        <p style="text-align: justify;">I learned this skills from Stephen Curry, who is a famous shooter player in World. As a player, I believe that players still need to score because basketball is about scoring and a team without shooters is going to struggle no matter how much they excel elsewhere on the court.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="85">
+                        <h3>Foot Movement - <span>0%</span></h3>
+                        <p style="text-align: justify;">I learned this skills from my father. As a player, I believe that having good footwoek can ehances my ability to move quickly and efficiently on the court. It is essential for both offensive and defensive plays.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 skills-card d-flex justify-content-center align-items-center">
+                    <div class="skills-item w-100 mb-3 p-2 d-flex justify-content-center align-items-center flex-column" data-progress="83">
+                        <h3>Dribbling - <span>0%</span></h3>
+                        <p style="text-align: justify;">I learned this skills from my experience. As a player, I believe that having a good ball handling can help me navigate through defenders, create scoring opportunities, and set up plays.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="bball_highlights.html" class="btn-skills"><button type="button" class="bg-transparent">See more</button></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="d-flex justify-content-center align-items-center min-vh-100 contact">
+        <div class="container contact-content d-flex justify-content-center align-items-center flex-column">
+            <h2 class="title fw-bolder mb-5 pb-3 text-center position-relative fs-1" data-aos="fade-down">Contact</h2>
+            <div class="row">
+                <div class="col-md-6 mb-5 soc">
+                    <h2 class="mb-3" data-aos="fade-right">Social Media</h2>
+                    <p data-aos="fade-up-right">Got any concerns and questions? Want you to share your basketball advice? I’d love to hear it. Know of a basketball league I can join? Let me know, I’m ready to play! Feel free to connect with me anytime!</p>
+                    <div class="row mb-5">
+                        <div class="d-flex gap-3 col-lg-6 col-12" data-aos="fade-up-right">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Vincent Lawrence F. Enriquez</div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 col-lg-6 col-12" data-aos="fade-up-right">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">vincentenriquez407@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <p class="text-center" data-aos="fade-right">OR</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <ul class="wrapper">
+                            <li class="icon facebook" onclick='window.location.href="https://www.facebook.com/vincentlawrence.enriquez.3"' data-aos="fade-up" data-aos-duration="500">
+                                <span class="tooltip">Facebook</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </li>
+                            <li class="icon twitter" onclick='window.location.href="https://x.com/lawrenceeeee_14"' data-aos="fade-up" data-aos-duration="1000">
+                                <span class="tooltip">Twitter</span>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </li>
+                            <li class="icon instagram" onclick='window.location.href="https://www.instagram.com/singk3tttt/"' data-aos="fade-up" data-aos-duration="1500">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </li>
+                            <li class="icon github" onclick='window.location.href="https://github.com/vincentenriquez"' data-aos="fade-up" data-aos-duration="2000">
+                                <span class="tooltip">Github</span>
+                                <span><i class="fab fa-github"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h2 class="mb-3" data-aos="fade-left">Reach Out</h2>
+                    <form>
+                        <div class="row g-3 mb-4">
+                            <div class="col-lg-6 col-12">
+                                <input type="name" class="form-control fs-5" placeholder="Name" name="name" data-aos="fade-up-left" data-aos-duration="1000">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <input type="email" class="form-control fs-5" placeholder="Email" name="email" data-aos="fade-up-left" data-aos-duration="1500">
+                            </div>
+                        </div>
+                        
+                        <div class="col mb-4">
+                            <input type="text" class="form-control fs-5" placeholder="Subject" name="text" data-aos="fade-up-left" data-aos-duration="2000">
+                        </div>
+                        <div class="col mb-4">
+                            <textarea name="message" cols="30" rows="10" class="form-control fs-5" style="height: 100px;" id="" placeholder="Message" data-aos="fade-up-left" data-aos-duration="2500"></textarea>
+                        </div>
+                        <div class="button-area d-flex justify-content-end">
+                            <button type="submit" class="btn btn-outline-danger fs-5" data-aos="fade-down-left">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">
+                Created By Vincent Lawrence F. Enriquez | 2024 All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo1.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">My parents noticed a spark of interest in the game of basketball in me from a very young age. They noticed how my eyes lit up whenever I saw a basketball game on television or when I was playing pretend on the playground, dribbling an imaginary ball and making big shots in my head. It was clear to them that basketball brought me so much joy, and they could see the potential for me to develop a passion for the sport. Recognizing this enthusiasm, my parents made a thoughtful decision to buy me my own basketball. They believed that having a real ball would allow me to immerse myself more fully in the game, encouraging my imagination and giving me the opportunity to practice my skills. Every time I held that ball, I felt happy and excited, dreaming of the day I could play on a real court, like the players I admired. This simple gift marked the beginning of a journey that would shape my love for basketball and provide countless hours of joy and fun.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo2.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">My father often reminisces about my childhood, sharing stories of how much I adored playing with a ball. From the moment I woke up in the morning until the time I went to bed at night, that ball was never far from my side. He recalls how I would carry it with me everywhere, whether I was in the backyard, at the park, or even inside the house. My parents would often buy me new balls, each one becoming a cherished companion in my daily adventures. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo3.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">In this picture, I am transported back to the days when I played my very first game in a league. It was an exhilarating experience that marked the beginning of my journey into the world of basketball. I can still remember the excitement and nerves that filled me as I stepped onto the court for the first time, surrounded by teammates and my relatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo4.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">In this photo, I was able to watch my idols play in live games for the first time, a moment I had been looking forward to for a long time. Attending these live events allowed me to immerse myself in the colorful atmosphere of basketball, and made me more aware of the intricacies and excitement of the sport. My interest in basketball deepened when I witnessed the skill, passion, and dedication of the players on the court. The experience was fun, and I felt so happy when I had the chance to take pictures with my idols. Meeting them in person was surreal; their presence inspired me in ways I never expected. From observing their techniques and strategies during the game, I learned valuable lessons that I can use in my own basketball journey. Every moment spent watching them strengthened my determination to improve my skills and strive for excellence in the sport. This experience not only deepened my love for basketball but also motivated me to work hard and pursue my dreams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo5.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">In this picture, you can see the place where my father first started encouraging me to get up early in the morning to play basketball. He always believed that starting the day with some physical activity would not only improve my skills but also boost my energy and mood. I remember a mixture of excitement and trepidation when I had the opportunity to participate in a 5v5 game with my friends. It was a thrilling experience, and I felt a great sense of camaraderie on the court. Looking back, I realize how much those mornings shaped my love for the game and the valuable lessons I learned about teamwork and perseverance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo6.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">This photo captures an unforgettable day when I had the incredible opportunity to watch my idols from the NBA at Fiba World Cup, including Karl-Anthony Towns and Jordan Clarkson, play live. The atmosphere in the arena was electric, and I felt great joy as I cheered for them from our seats, which were quite high. Despite the distance, the energy of the crowd and the skill of the players made it an unforgettable experience. Watching them in person gave me a deeper appreciation for their talent and hard work. I learned a lot from their style of play and how they interacted with each other on the court. It is truly inspiring to see these athletes perform at such a high level right here in the Philippines. I left the game feeling motivated and eager to improve my own skills, hoping that one day I could emulate their success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid rounded mb-2" src="photo7.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="text-align: justify;">In this photo, it captures the day I try out for the Varsity basketball team for the first time at Pamantasan ng Lungsod ng Pasig. This moment holds a special place in my heart because, for me, it represents my greatest achievement in playing basketball. As a shy person, stepping onto that court felt scary, but comforting. I've always admired the skill and confidence of the players I've watched, and now I'm jumping into that world myself. Leaving my comfort zone was not easy, but I was driven by my passion for the game and the desire to challenge myself. I remember a mixture of excitement and nervousness as I joined my teammates in tryouts, but I suppressed those feelings. My father was there to support me, and seeing his pride made the experience even more meaningful. I'm really happy that I made this move, and I hope to continue to grow as a player and as a person.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="animated-skills.js"></script>
+    <script src="aos.js"></script>
+</body>
+</html>
